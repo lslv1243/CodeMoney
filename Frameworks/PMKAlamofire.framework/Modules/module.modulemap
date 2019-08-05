@@ -1,0 +1,4 @@
+framework module PMKAlamofire {
+  header "PMKAlamofire-Swift.h"
+  requires objc
+}

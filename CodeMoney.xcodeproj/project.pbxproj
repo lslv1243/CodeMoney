@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72D5973222F870E20029CAD3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D5972E22F870E20029CAD3 /* Alamofire.framework */; };
+		72D5973322F870E20029CAD3 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D5972F22F870E20029CAD3 /* PromiseKit.framework */; };
+		72D5973422F870E20029CAD3 /* PMKAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D5973022F870E20029CAD3 /* PMKAlamofire.framework */; };
+		72D5973522F870E30029CAD3 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D5973122F870E20029CAD3 /* Kingfisher.framework */; };
+		72D5973D22F88F260029CAD3 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D5973C22F88F260029CAD3 /* WalletViewController.swift */; };
+		72D5973F22F88F3D0029CAD3 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D5973E22F88F3D0029CAD3 /* HistoryViewController.swift */; };
+		72D5974122F88F560029CAD3 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D5974022F88F560029CAD3 /* PayViewController.swift */; };
+		72D5974322F88F6D0029CAD3 /* WithdrawalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D5974222F88F6D0029CAD3 /* WithdrawalsViewController.swift */; };
+		72D5974522F88F7C0029CAD3 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D5974422F88F7C0029CAD3 /* PlacesViewController.swift */; };
 		72FFF58522F8691800DA0FE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FFF58422F8691800DA0FE0 /* AppDelegate.swift */; };
-		72FFF58722F8691800DA0FE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FFF58622F8691800DA0FE0 /* ViewController.swift */; };
-		72FFF58A22F8691800DA0FE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72FFF58822F8691800DA0FE0 /* Main.storyboard */; };
+		72FFF58722F8691800DA0FE0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FFF58622F8691800DA0FE0 /* RootViewController.swift */; };
 		72FFF58C22F8691A00DA0FE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72FFF58B22F8691A00DA0FE0 /* Assets.xcassets */; };
 		72FFF58F22F8691A00DA0FE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72FFF58D22F8691A00DA0FE0 /* LaunchScreen.storyboard */; };
 		72FFF59A22F8691A00DA0FE0 /* CodeMoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FFF59922F8691A00DA0FE0 /* CodeMoneyTests.swift */; };
@@ -26,10 +34,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		72D5972E22F870E20029CAD3 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		72D5972F22F870E20029CAD3 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = SOURCE_ROOT; };
+		72D5973022F870E20029CAD3 /* PMKAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PMKAlamofire.framework; path = Carthage/Build/iOS/PMKAlamofire.framework; sourceTree = SOURCE_ROOT; };
+		72D5973122F870E20029CAD3 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = SOURCE_ROOT; };
+		72D5973C22F88F260029CAD3 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		72D5973E22F88F3D0029CAD3 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		72D5974022F88F560029CAD3 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
+		72D5974222F88F6D0029CAD3 /* WithdrawalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawalsViewController.swift; sourceTree = "<group>"; };
+		72D5974422F88F7C0029CAD3 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		72FFF58122F8691800DA0FE0 /* CodeMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72FFF58422F8691800DA0FE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		72FFF58622F8691800DA0FE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		72FFF58922F8691800DA0FE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		72FFF58622F8691800DA0FE0 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		72FFF58B22F8691A00DA0FE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72FFF58E22F8691A00DA0FE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72FFF59022F8691A00DA0FE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +59,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72D5973222F870E20029CAD3 /* Alamofire.framework in Frameworks */,
+				72D5973422F870E20029CAD3 /* PMKAlamofire.framework in Frameworks */,
+				72D5973522F870E30029CAD3 /* Kingfisher.framework in Frameworks */,
+				72D5973322F870E20029CAD3 /* PromiseKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +76,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7292CADA22F86DF800DB0DC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72D5972E22F870E20029CAD3 /* Alamofire.framework */,
+				72D5973122F870E20029CAD3 /* Kingfisher.framework */,
+				72D5973022F870E20029CAD3 /* PMKAlamofire.framework */,
+				72D5972F22F870E20029CAD3 /* PromiseKit.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		72D5973622F88EDD0029CAD3 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				72D5973C22F88F260029CAD3 /* WalletViewController.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		72D5973822F88EEA0029CAD3 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				72D5973E22F88F3D0029CAD3 /* HistoryViewController.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		72D5973922F88EEE0029CAD3 /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				72D5974022F88F560029CAD3 /* PayViewController.swift */,
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
+		72D5973A22F88EFE0029CAD3 /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				72D5974422F88F7C0029CAD3 /* PlacesViewController.swift */,
+			);
+			path = Places;
+			sourceTree = "<group>";
+		};
+		72D5973B22F88F080029CAD3 /* Withdrawals */ = {
+			isa = PBXGroup;
+			children = (
+				72D5974222F88F6D0029CAD3 /* WithdrawalsViewController.swift */,
+			);
+			path = Withdrawals;
+			sourceTree = "<group>";
+		};
 		72FFF57822F8691800DA0FE0 = {
 			isa = PBXGroup;
 			children = (
+				7292CADA22F86DF800DB0DC6 /* Frameworks */,
 				72FFF58322F8691800DA0FE0 /* CodeMoney */,
 				72FFF59822F8691A00DA0FE0 /* CodeMoneyTests */,
 				72FFF58222F8691800DA0FE0 /* Products */,
@@ -77,9 +149,13 @@
 		72FFF58322F8691800DA0FE0 /* CodeMoney */ = {
 			isa = PBXGroup;
 			children = (
+				72D5973B22F88F080029CAD3 /* Withdrawals */,
+				72D5973A22F88EFE0029CAD3 /* Places */,
+				72D5973922F88EEE0029CAD3 /* Pay */,
+				72D5973822F88EEA0029CAD3 /* History */,
+				72D5973622F88EDD0029CAD3 /* Wallet */,
 				72FFF58422F8691800DA0FE0 /* AppDelegate.swift */,
-				72FFF58622F8691800DA0FE0 /* ViewController.swift */,
-				72FFF58822F8691800DA0FE0 /* Main.storyboard */,
+				72FFF58622F8691800DA0FE0 /* RootViewController.swift */,
 				72FFF58B22F8691A00DA0FE0 /* Assets.xcassets */,
 				72FFF58D22F8691A00DA0FE0 /* LaunchScreen.storyboard */,
 				72FFF59022F8691A00DA0FE0 /* Info.plist */,
@@ -106,6 +182,7 @@
 				72FFF57D22F8691800DA0FE0 /* Sources */,
 				72FFF57E22F8691800DA0FE0 /* Frameworks */,
 				72FFF57F22F8691800DA0FE0 /* Resources */,
+				7292CAE322F86E8F00DB0DC6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -179,7 +256,6 @@
 			files = (
 				72FFF58F22F8691A00DA0FE0 /* LaunchScreen.storyboard in Resources */,
 				72FFF58C22F8691A00DA0FE0 /* Assets.xcassets in Resources */,
-				72FFF58A22F8691800DA0FE0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,13 +268,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7292CAE322F86E8F00DB0DC6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PromiseKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PMKAlamofire.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Kingfisher.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/PromiseKit.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/PMKAlamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		72FFF57D22F8691800DA0FE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72FFF58722F8691800DA0FE0 /* ViewController.swift in Sources */,
+				72FFF58722F8691800DA0FE0 /* RootViewController.swift in Sources */,
+				72D5974522F88F7C0029CAD3 /* PlacesViewController.swift in Sources */,
+				72D5974122F88F560029CAD3 /* PayViewController.swift in Sources */,
 				72FFF58522F8691800DA0FE0 /* AppDelegate.swift in Sources */,
+				72D5974322F88F6D0029CAD3 /* WithdrawalsViewController.swift in Sources */,
+				72D5973D22F88F260029CAD3 /* WalletViewController.swift in Sources */,
+				72D5973F22F88F3D0029CAD3 /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,14 +330,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		72FFF58822F8691800DA0FE0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				72FFF58922F8691800DA0FE0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		72FFF58D22F8691A00DA0FE0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -362,6 +463,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6TQ42569MR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CodeMoney/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -370,7 +475,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lslv1243.CodeMoney;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -380,6 +485,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6TQ42569MR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CodeMoney/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -388,7 +497,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lslv1243.CodeMoney;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
