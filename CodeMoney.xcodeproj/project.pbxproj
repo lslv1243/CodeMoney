@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7283A9F522F8A06D00B37047 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283A9F422F8A06D00B37047 /* Place.swift */; };
+		7283A9F922F8AAF700B37047 /* PlacesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283A9F822F8AAF700B37047 /* PlacesClient.swift */; };
+		7283A9FB22F9A93400B37047 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283A9FA22F9A93400B37047 /* PlaceTableViewCell.swift */; };
 		72D5973222F870E20029CAD3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D5972E22F870E20029CAD3 /* Alamofire.framework */; };
 		72D5973322F870E20029CAD3 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D5972F22F870E20029CAD3 /* PromiseKit.framework */; };
 		72D5973422F870E20029CAD3 /* PMKAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D5973022F870E20029CAD3 /* PMKAlamofire.framework */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7283A9F422F8A06D00B37047 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		7283A9F822F8AAF700B37047 /* PlacesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesClient.swift; sourceTree = "<group>"; };
+		7283A9FA22F9A93400B37047 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
 		72D5972E22F870E20029CAD3 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
 		72D5972F22F870E20029CAD3 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = SOURCE_ROOT; };
 		72D5973022F870E20029CAD3 /* PMKAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PMKAlamofire.framework; path = Carthage/Build/iOS/PMKAlamofire.framework; sourceTree = SOURCE_ROOT; };
@@ -115,6 +121,9 @@
 			isa = PBXGroup;
 			children = (
 				72D5974422F88F7C0029CAD3 /* PlacesViewController.swift */,
+				7283A9F422F8A06D00B37047 /* Place.swift */,
+				7283A9F822F8AAF700B37047 /* PlacesClient.swift */,
+				7283A9FA22F9A93400B37047 /* PlaceTableViewCell.swift */,
 			);
 			path = Places;
 			sourceTree = "<group>";
@@ -304,10 +313,13 @@
 				72FFF58722F8691800DA0FE0 /* RootViewController.swift in Sources */,
 				72D5974522F88F7C0029CAD3 /* PlacesViewController.swift in Sources */,
 				72D5974122F88F560029CAD3 /* PayViewController.swift in Sources */,
+				7283A9F522F8A06D00B37047 /* Place.swift in Sources */,
+				7283A9F922F8AAF700B37047 /* PlacesClient.swift in Sources */,
 				72FFF58522F8691800DA0FE0 /* AppDelegate.swift in Sources */,
 				72D5974322F88F6D0029CAD3 /* WithdrawalsViewController.swift in Sources */,
 				72D5973D22F88F260029CAD3 /* WalletViewController.swift in Sources */,
 				72D5973F22F88F3D0029CAD3 /* HistoryViewController.swift in Sources */,
+				7283A9FB22F9A93400B37047 /* PlaceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
