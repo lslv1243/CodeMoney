@@ -19,8 +19,13 @@ class PlacesViewController: UIViewController, UITableViewDataSource, UITableView
   init() {
     super.init(nibName: nil, bundle: nil)
     
-    view.addSubview(tableView)
-    view.addSubview(searchBar)
+    let stackView = UIStackView()
+    stackView.axis = .vertical
+    view = stackView
+    
+    stackView.addArrangedSubview(searchBar)
+    stackView.addArrangedSubview(tableView)
+    stackView.bringSubviewToFront(searchBar)
     
     tableView.dataSource = self
     tableView.delegate = self
@@ -34,25 +39,11 @@ class PlacesViewController: UIViewController, UITableViewDataSource, UITableView
     tableView.refreshControl = refreshControl
     refreshControl.addTarget(self, action: #selector(refreshControlTarget), for: .valueChanged)
     
-    searchBar.translatesAutoresizingMaskIntoConstraints = false
-    tableView.translatesAutoresizingMaskIntoConstraints = false
-    
-    NSLayoutConstraint.activate([
-      searchBar.topAnchor.constraint(equalTo: view.topAnchor),
-      searchBar.leftAnchor.constraint(equalTo: view.leftAnchor),
-      searchBar.rightAnchor.constraint(equalTo: view.rightAnchor),
-      
-      tableView.topAnchor.constraint(equalTo: searchBar.bottomAnchor),
-      tableView.leftAnchor.constraint(equalTo: view.leftAnchor),
-      tableView.rightAnchor.constraint(equalTo: view.rightAnchor),
-      tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-    ])
-    
-    reloadPlaces()
-    
     let resignSearchBarFirstResponderTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(resignSearchBarFirstResponder))
     resignSearchBarFirstResponderTapGestureRecognizer.cancelsTouchesInView = false
     tableView.addGestureRecognizer(resignSearchBarFirstResponderTapGestureRecognizer)
+
+    reloadPlaces()
   }
   
   required init?(coder aDecoder: NSCoder) {
