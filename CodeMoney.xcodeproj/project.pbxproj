@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		721CD7192306EE140052334C /* PlacesSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721CD7182306EE130052334C /* PlacesSearchBar.swift */; };
 		7283A9F522F8A06D00B37047 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283A9F422F8A06D00B37047 /* Place.swift */; };
 		7283A9F922F8AAF700B37047 /* PlacesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283A9F822F8AAF700B37047 /* PlacesClient.swift */; };
 		7283A9FB22F9A93400B37047 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283A9FA22F9A93400B37047 /* PlaceTableViewCell.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		721CD7182306EE130052334C /* PlacesSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesSearchBar.swift; sourceTree = "<group>"; };
 		7283A9F422F8A06D00B37047 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		7283A9F822F8AAF700B37047 /* PlacesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesClient.swift; sourceTree = "<group>"; };
 		7283A9FA22F9A93400B37047 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				7283A9F422F8A06D00B37047 /* Place.swift */,
 				7283A9F822F8AAF700B37047 /* PlacesClient.swift */,
 				7283A9FA22F9A93400B37047 /* PlaceTableViewCell.swift */,
+				721CD7182306EE130052334C /* PlacesSearchBar.swift */,
 			);
 			path = Places;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				72D5973D22F88F260029CAD3 /* WalletViewController.swift in Sources */,
 				72D5973F22F88F3D0029CAD3 /* HistoryViewController.swift in Sources */,
 				7283A9FB22F9A93400B37047 /* PlaceTableViewCell.swift in Sources */,
+				721CD7192306EE140052334C /* PlacesSearchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

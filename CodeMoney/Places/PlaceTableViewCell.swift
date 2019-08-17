@@ -54,7 +54,7 @@ class PlaceTableViewCell: UITableViewCell {
     placeImageView.contentMode = .scaleAspectFill
     placeImageView.clipsToBounds = true
     
-    placeIconImageView.image = UIImage(named: "PlaceTableViewCell.PlaceIcon")?.withRenderingMode(.alwaysTemplate)
+    placeIconImageView.image = UIImage(named: "PlaceTableViewCell.PlaceIcon")!.withRenderingMode(.alwaysTemplate)
     placeIconImageView.tintColor = .gray
     
     placeDescriptionLabel.font = placeDescriptionLabel.font.withSize(10)
@@ -62,7 +62,7 @@ class PlaceTableViewCell: UITableViewCell {
     
     placeNameLabel.font = placeNameLabel.font.withSize(18)
     
-    starIconImageView.image = UIImage(named: "PlaceTableViewCell.StarIcon")?.withRenderingMode(.alwaysTemplate)
+    starIconImageView.image = UIImage(named: "PlaceTableViewCell.StarIcon")!.withRenderingMode(.alwaysTemplate)
     starIconImageView.tintColor = .gray
     
     starsLabel.font = starsLabel.font.withSize(15)
@@ -112,7 +112,7 @@ class PlaceTableViewCell: UITableViewCell {
       starsLabel.topAnchor.constraint(equalTo: placeNameLabel.bottomAnchor, constant: 8),
       starsLabel.leftAnchor.constraint(equalTo: starIconImageView.rightAnchor, constant: 5),
       starsLabel.rightAnchor.constraint(equalTo: roundCornersView.rightAnchor, constant: -18),
-      starsLabel.bottomAnchor.constraint(equalTo: roundCornersView.bottomAnchor, constant: -15),
+      starsLabel.bottomAnchor.constraint(equalTo: roundCornersView.bottomAnchor, constant: -18),
     ])
   }
   
