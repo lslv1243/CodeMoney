@@ -25,12 +25,13 @@ extension PlacesInteractor: PlacesInteractorInput {
   }
   
   private func loadPlaces(forLatitude latitude: Double, longitude: Double, search: String) {
-    placesClient.listDistance(latitude: latitude, longitude: longitude, search: search, page: self.currentPage)
+    let page = self.currentPage
+    placesClient.listDistance(latitude: latitude, longitude: longitude, search: search, page: page)
       .done { places in
-        self.output.didLoadPlaces(places: places, forPage: self.currentPage)
+        self.output.didLoadPlaces(places: places, forPage: page)
       }
       .catch { error in
-        self.output.didFailLoadingPlaces(error: error, forPage: self.currentPage)
+        self.output.didFailLoadingPlaces(error: error, forPage: page)
       }
   }
 }
