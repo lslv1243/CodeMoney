@@ -31,6 +31,6 @@ extension PlacesInteractor: PlacesInteractorInput {
       }
       .catch { error in
         self.output.didFailLoadingPlaces(error: error, forPage: self.currentPage)
-    }
+      }
   }
 }
