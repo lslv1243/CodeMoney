@@ -1,28 +1,28 @@
 //
-//  PlacesViewController.swift
+//  PlacesPlacesViewController.swift
 //  CodeMoney
 //
-//  Created by Leonardo da Silva on 05/08/19.
-//  Copyright © 2019 Leonardo da Silva. All rights reserved.
+//  Created by Leonardo da Silva on 20/08/2019.
+//  Copyright © 2019 Code Money. All rights reserved.
 //
 
 import UIKit
 import MapKit
 
 class PlacesViewController: UIViewController {
-  private var places: [Place] = []
-  private let placesClient = PlacesClient()
   private let tableView = UITableView()
   private let mapView = MKMapView()
   private let refreshControl = UIRefreshControl()
   private let searchBar = PlacesSearchBar()
+  private let userLocation = FakeUserLocation()
   
-  private var searching = ""
-  private var currentLatitude = -27.0912233
-  private var currentLongitude = -48.8892335
+  private var places: [Place] = []
   
-  init() {
-    super.init(nibName: nil, bundle: nil)
+  var output: PlacesViewOutput!
+  
+  // MARK: Life cycle
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
     let stackView = UIStackView()
     stackView.axis = .vertical
@@ -43,10 +43,6 @@ class PlacesViewController: UIViewController {
     view.backgroundColor = .white
     tableView.separatorColor = .clear
     
-    let location = CLLocationCoordinate2D(latitude: currentLatitude, longitude: currentLongitude)
-    let userLocation = FakeUserLocation()
-    userLocation.fakeCoordinate = location
-    mapView.setCenter(location, animated: false)
     mapView.addAnnotation(userLocation)
     mapView.delegate = self
     
@@ -57,12 +53,8 @@ class PlacesViewController: UIViewController {
     resignSearchBarFirstResponderTapGestureRecognizer.cancelsTouchesInView = false
     tableView.addGestureRecognizer(resignSearchBarFirstResponderTapGestureRecognizer)
     mapView.addGestureRecognizer(resignSearchBarFirstResponderTapGestureRecognizer)
-
-    reloadPlaces()
-  }
-  
-  required init?(coder aDecoder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
+    
+    output.viewIsReady()
   }
   
   @objc func resignSearchBarFirstResponder() {
@@ -70,20 +62,38 @@ class PlacesViewController: UIViewController {
   }
   
   @objc func refreshControlTarget() {
-    reloadPlaces()
+    output.didPullToRefreshPlaces()
+  }
+}
+
+extension PlacesViewController: PlacesViewInput {
+  func positionMap(atLatitude latitude: Double, longitude: Double) {
+    let location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+    userLocation.fakeCoordinate = location
+    mapView.setCenter(location, animated: false)
   }
   
-  func reloadPlaces() {
+  func showPlaces(_ places: [Place]) {
+    self.places = places
+    tableView.reloadData()
+  }
+  
+  func showErrorWhileLoadingPlaces() {
+    let alert = UIAlertController(
+      title: "Erro",
+      message: "Não foi possível carregar os locais.",
+      preferredStyle: .alert
+    )
+    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+    present(alert, animated: true, completion: nil)
+  }
+  
+  func showLoadingPlacesIndicator() {
     refreshControl.beginRefreshing()
-    placesClient.listDistance(latitude: currentLatitude, longitude: currentLongitude, search: searching)
-      .done { places in
-        self.places = places
-        self.tableView.reloadData()
-      }
-      .catch { error in }
-      .finally {
-        self.refreshControl.endRefreshing()
-      }
+  }
+  
+  func hideLoadingPlacesIndicator() {
+    refreshControl.endRefreshing()
   }
 }
 
@@ -94,8 +104,7 @@ extension PlacesViewController: PlacesSearchBarDelegate {
   }
   
   func placesSearchBar(_ searchBar: PlacesSearchBar, didChangeText newText: String) {
-    searching = newText
-    reloadPlaces()
+    output.searchBarDidChangeText(newText)
   }
 }
 

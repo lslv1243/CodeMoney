@@ -15,11 +15,14 @@ class RootViewController: UITabBarController {
     
     tabBar.tintColor = .orange
     
+    let placesInitializer = PlacesModuleInitializer()
+    placesInitializer.awakeFromNib()
+    
     setViewControllers([
       WalletViewController(),
       HistoryViewController(),
       PayViewController(),
-      PlacesViewController(),
+      placesInitializer.placesViewController,
       WithdrawalsViewController(),
     ], animated: false)
   

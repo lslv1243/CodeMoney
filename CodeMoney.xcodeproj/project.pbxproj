@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18A680471B2D1B19BB046912 /* PlacesInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DF7CFDD6746F91DA3A505 /* PlacesInteractorInput.swift */; };
+		2A239A53A7622239097F14D8 /* PlacesViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EE83957C0601A4AA06E65D /* PlacesViewInput.swift */; };
+		2B54A80679C1E4B956213FDA /* PlacesInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03D4FFCF000598B6693A773 /* PlacesInteractorOutput.swift */; };
+		3F741AD63C08BB29278F0E2A /* PlacesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C618F7450ECE1B890918F5 /* PlacesPresenter.swift */; };
+		40ABE81BC1472579DB2ECBFE /* PlacesModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A6BEC54F7EAC2984C7C33D /* PlacesModuleInput.swift */; };
+		5007D97C49272E0CD6E6DE0F /* PlacesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F30575E73C19D5849484B2B /* PlacesConfigurator.swift */; };
+		55FAC80B16AE419C55DF1712 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100DE69346434EBCE2FBB8F /* PlacesViewController.swift */; };
+		62297E20DF876D3A596AFE7D /* PlacesInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755863DF4DCD4DC78DF49C04 /* PlacesInitializer.swift */; };
+		6AE9998E25D17EEC2F871889 /* PlacesRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA165F156F8F74B0C4CB26D6 /* PlacesRouterInput.swift */; };
 		721CD7192306EE140052334C /* PlacesSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721CD7182306EE130052334C /* PlacesSearchBar.swift */; };
 		7283A9F522F8A06D00B37047 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283A9F422F8A06D00B37047 /* Place.swift */; };
 		7283A9F922F8AAF700B37047 /* PlacesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283A9F822F8AAF700B37047 /* PlacesClient.swift */; };
@@ -19,12 +28,14 @@
 		72D5973F22F88F3D0029CAD3 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D5973E22F88F3D0029CAD3 /* HistoryViewController.swift */; };
 		72D5974122F88F560029CAD3 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D5974022F88F560029CAD3 /* PayViewController.swift */; };
 		72D5974322F88F6D0029CAD3 /* WithdrawalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D5974222F88F6D0029CAD3 /* WithdrawalsViewController.swift */; };
-		72D5974522F88F7C0029CAD3 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D5974422F88F7C0029CAD3 /* PlacesViewController.swift */; };
 		72FFF58522F8691800DA0FE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FFF58422F8691800DA0FE0 /* AppDelegate.swift */; };
 		72FFF58722F8691800DA0FE0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FFF58622F8691800DA0FE0 /* RootViewController.swift */; };
 		72FFF58C22F8691A00DA0FE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72FFF58B22F8691A00DA0FE0 /* Assets.xcassets */; };
 		72FFF58F22F8691A00DA0FE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72FFF58D22F8691A00DA0FE0 /* LaunchScreen.storyboard */; };
 		72FFF59A22F8691A00DA0FE0 /* CodeMoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FFF59922F8691A00DA0FE0 /* CodeMoneyTests.swift */; };
+		82A0483BDD4CD965446C2A1F /* PlacesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF432DDCC317ADC9A170DDD /* PlacesRouter.swift */; };
+		8AF0ABE880F62C3822B4E6E2 /* PlacesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AFAFF861572ABE791AC176 /* PlacesInteractor.swift */; };
+		C6A124BE60DAAC00287EFF1F /* PlacesViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B6C743CCB20D5739BA7B4F /* PlacesViewOutput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +49,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06A6BEC54F7EAC2984C7C33D /* PlacesModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlacesModuleInput.swift; sourceTree = "<group>"; };
+		08019AE1EDFAAD3FC6F7FB00 /* TestingRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestingRouterInput.h; sourceTree = "<group>"; };
+		0DE27FC5F29CA833D411AAB9 /* TestingPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TestingPresenter.m; sourceTree = "<group>"; };
+		114178F8BE2FD8B348AC9B95 /* TestingRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestingRouter.h; sourceTree = "<group>"; };
+		28F7F203B17EEBED4715685D /* TestingAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestingAssembly.h; sourceTree = "<group>"; };
+		29510065EE0A98E8D82921CF /* TestingInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestingInteractorOutput.h; sourceTree = "<group>"; };
+		295AD9926FA06F66D3D08EB6 /* TestingViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TestingViewController.m; sourceTree = "<group>"; };
+		33B6C743CCB20D5739BA7B4F /* PlacesViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlacesViewOutput.swift; sourceTree = "<group>"; };
+		3F6343526B683C16C8E0E82E /* TestingInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestingInteractor.h; sourceTree = "<group>"; };
+		622F1F83AD5ACCB312A24C08 /* TestingViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestingViewInput.h; sourceTree = "<group>"; };
+		6F30575E73C19D5849484B2B /* PlacesConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlacesConfigurator.swift; sourceTree = "<group>"; };
 		721CD7182306EE130052334C /* PlacesSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesSearchBar.swift; sourceTree = "<group>"; };
 		7283A9F422F8A06D00B37047 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		7283A9F822F8AAF700B37047 /* PlacesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesClient.swift; sourceTree = "<group>"; };
@@ -50,7 +72,6 @@
 		72D5973E22F88F3D0029CAD3 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		72D5974022F88F560029CAD3 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
 		72D5974222F88F6D0029CAD3 /* WithdrawalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawalsViewController.swift; sourceTree = "<group>"; };
-		72D5974422F88F7C0029CAD3 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		72FFF58122F8691800DA0FE0 /* CodeMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72FFF58422F8691800DA0FE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72FFF58622F8691800DA0FE0 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +81,23 @@
 		72FFF59522F8691A00DA0FE0 /* CodeMoneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeMoneyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72FFF59922F8691A00DA0FE0 /* CodeMoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeMoneyTests.swift; sourceTree = "<group>"; };
 		72FFF59B22F8691A00DA0FE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		755863DF4DCD4DC78DF49C04 /* PlacesInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlacesInitializer.swift; sourceTree = "<group>"; };
+		79AFAFF861572ABE791AC176 /* PlacesInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlacesInteractor.swift; sourceTree = "<group>"; };
+		83A981EEEC3525E059C56570 /* TestingPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestingPresenter.h; sourceTree = "<group>"; };
+		83FA906217455852FD477786 /* TestingRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TestingRouter.m; sourceTree = "<group>"; };
+		91C618F7450ECE1B890918F5 /* PlacesPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlacesPresenter.swift; sourceTree = "<group>"; };
+		A03D4FFCF000598B6693A773 /* PlacesInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlacesInteractorOutput.swift; sourceTree = "<group>"; };
+		A100DE69346434EBCE2FBB8F /* PlacesViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		A27A9C60D70D5D988837C106 /* TestingViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestingViewOutput.h; sourceTree = "<group>"; };
+		A57DF7CFDD6746F91DA3A505 /* PlacesInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlacesInteractorInput.swift; sourceTree = "<group>"; };
+		A5EE83957C0601A4AA06E65D /* PlacesViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlacesViewInput.swift; sourceTree = "<group>"; };
+		AA165F156F8F74B0C4CB26D6 /* PlacesRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlacesRouterInput.swift; sourceTree = "<group>"; };
+		ACF432DDCC317ADC9A170DDD /* PlacesRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlacesRouter.swift; sourceTree = "<group>"; };
+		B94F93DD80C3433996DA6358 /* TestingInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestingInteractorInput.h; sourceTree = "<group>"; };
+		BC6ADCD9AF3B3CF189C1B0DC /* TestingInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TestingInteractor.m; sourceTree = "<group>"; };
+		E5A55E1B4E1E5EAAB7656169 /* TestingViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestingViewController.h; sourceTree = "<group>"; };
+		EB63D186FD2AABD6AF1EF367 /* TestingModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestingModuleInput.h; sourceTree = "<group>"; };
+		EF9F08F6E871FD64F7D08EE3 /* TestingAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TestingAssembly.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +122,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23E12B6C0BA7C8245014C1BB /* CodeMoney */ = {
+			isa = PBXGroup;
+			children = (
+				82CC99BC437234427F46C057 /* CodeMoney */,
+			);
+			path = CodeMoney;
+			sourceTree = "<group>";
+		};
+		2D1AE4B1FE641358D1678645 /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				4DF94580EBAE1288A91CF034 /* View */,
+				450DA21DB8342CDFAC77F885 /* Presenter */,
+				B7CBEC0252589F3F898F1EEA /* Interactor */,
+				C458FAC99E9FD486C6C790D5 /* Router */,
+				DC457808E41E43D4239A97DE /* Configurator */,
+			);
+			name = Places;
+			path = Users/leonardodasilva/Desktop/CodeMoney/CodeMoney/Modules/Places;
+			sourceTree = SOURCE_ROOT;
+		};
+		450DA21DB8342CDFAC77F885 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				06A6BEC54F7EAC2984C7C33D /* PlacesModuleInput.swift */,
+				91C618F7450ECE1B890918F5 /* PlacesPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4DF94580EBAE1288A91CF034 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				721CD7182306EE130052334C /* PlacesSearchBar.swift */,
+				7283A9FA22F9A93400B37047 /* PlaceTableViewCell.swift */,
+				A5EE83957C0601A4AA06E65D /* PlacesViewInput.swift */,
+				33B6C743CCB20D5739BA7B4F /* PlacesViewOutput.swift */,
+				A100DE69346434EBCE2FBB8F /* PlacesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		68644AEF9C01DCCCA16A9C71 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				69766E301F459E7B7CFDA748 /* Testing */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		69766E301F459E7B7CFDA748 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				97BA57A63F9325DC3C1B8CB6 /* Assembly */,
+				85AFE321D11A3F09B1BC5C96 /* View */,
+				96D0E2B647FF36093FE43E82 /* Presenter */,
+				92057C960F504EBF92FA7FC4 /* Interactor */,
+				B8C284E54C8A8EF4B9DD6C81 /* Router */,
+			);
+			path = Testing;
+			sourceTree = "<group>";
+		};
 		7292CADA22F86DF800DB0DC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,18 +219,6 @@
 			path = Pay;
 			sourceTree = "<group>";
 		};
-		72D5973A22F88EFE0029CAD3 /* Places */ = {
-			isa = PBXGroup;
-			children = (
-				72D5974422F88F7C0029CAD3 /* PlacesViewController.swift */,
-				7283A9F422F8A06D00B37047 /* Place.swift */,
-				7283A9F822F8AAF700B37047 /* PlacesClient.swift */,
-				7283A9FA22F9A93400B37047 /* PlaceTableViewCell.swift */,
-				721CD7182306EE130052334C /* PlacesSearchBar.swift */,
-			);
-			path = Places;
-			sourceTree = "<group>";
-		};
 		72D5973B22F88F080029CAD3 /* Withdrawals */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +234,7 @@
 				72FFF58322F8691800DA0FE0 /* CodeMoney */,
 				72FFF59822F8691A00DA0FE0 /* CodeMoneyTests */,
 				72FFF58222F8691800DA0FE0 /* Products */,
+				AA668FAED6A93E9B9204FA0A /* Users */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,8 +250,8 @@
 		72FFF58322F8691800DA0FE0 /* CodeMoney */ = {
 			isa = PBXGroup;
 			children = (
+				EB50A1B118DD728717BDE8F1 /* Modules */,
 				72D5973B22F88F080029CAD3 /* Withdrawals */,
-				72D5973A22F88EFE0029CAD3 /* Places */,
 				72D5973922F88EEE0029CAD3 /* Pay */,
 				72D5973822F88EEA0029CAD3 /* History */,
 				72D5973622F88EDD0029CAD3 /* Wallet */,
@@ -182,6 +271,127 @@
 				72FFF59B22F8691A00DA0FE0 /* Info.plist */,
 			);
 			path = CodeMoneyTests;
+			sourceTree = "<group>";
+		};
+		82CC99BC437234427F46C057 /* CodeMoney */ = {
+			isa = PBXGroup;
+			children = (
+				68644AEF9C01DCCCA16A9C71 /* Modules */,
+			);
+			path = CodeMoney;
+			sourceTree = "<group>";
+		};
+		85AFE321D11A3F09B1BC5C96 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				622F1F83AD5ACCB312A24C08 /* TestingViewInput.h */,
+				A27A9C60D70D5D988837C106 /* TestingViewOutput.h */,
+				E5A55E1B4E1E5EAAB7656169 /* TestingViewController.h */,
+				295AD9926FA06F66D3D08EB6 /* TestingViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92057C960F504EBF92FA7FC4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B94F93DD80C3433996DA6358 /* TestingInteractorInput.h */,
+				29510065EE0A98E8D82921CF /* TestingInteractorOutput.h */,
+				3F6343526B683C16C8E0E82E /* TestingInteractor.h */,
+				BC6ADCD9AF3B3CF189C1B0DC /* TestingInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		96D0E2B647FF36093FE43E82 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EB63D186FD2AABD6AF1EF367 /* TestingModuleInput.h */,
+				83A981EEEC3525E059C56570 /* TestingPresenter.h */,
+				0DE27FC5F29CA833D411AAB9 /* TestingPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		97BA57A63F9325DC3C1B8CB6 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				28F7F203B17EEBED4715685D /* TestingAssembly.h */,
+				EF9F08F6E871FD64F7D08EE3 /* TestingAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		AA668FAED6A93E9B9204FA0A /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				CE96ADA32C90BF44E0CEFFBA /* leonardodasilva */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		B7CBEC0252589F3F898F1EEA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				7283A9F422F8A06D00B37047 /* Place.swift */,
+				7283A9F822F8AAF700B37047 /* PlacesClient.swift */,
+				A57DF7CFDD6746F91DA3A505 /* PlacesInteractorInput.swift */,
+				A03D4FFCF000598B6693A773 /* PlacesInteractorOutput.swift */,
+				79AFAFF861572ABE791AC176 /* PlacesInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B8C284E54C8A8EF4B9DD6C81 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				08019AE1EDFAAD3FC6F7FB00 /* TestingRouterInput.h */,
+				114178F8BE2FD8B348AC9B95 /* TestingRouter.h */,
+				83FA906217455852FD477786 /* TestingRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C458FAC99E9FD486C6C790D5 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AA165F156F8F74B0C4CB26D6 /* PlacesRouterInput.swift */,
+				ACF432DDCC317ADC9A170DDD /* PlacesRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CE96ADA32C90BF44E0CEFFBA /* leonardodasilva */ = {
+			isa = PBXGroup;
+			children = (
+				FADE5F8A30BEDFC1ED6AD572 /* Desktop */,
+			);
+			path = leonardodasilva;
+			sourceTree = "<group>";
+		};
+		DC457808E41E43D4239A97DE /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				6F30575E73C19D5849484B2B /* PlacesConfigurator.swift */,
+				755863DF4DCD4DC78DF49C04 /* PlacesInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		EB50A1B118DD728717BDE8F1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2D1AE4B1FE641358D1678645 /* Places */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FADE5F8A30BEDFC1ED6AD572 /* Desktop */ = {
+			isa = PBXGroup;
+			children = (
+				23E12B6C0BA7C8245014C1BB /* CodeMoney */,
+			);
+			path = Desktop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,7 +524,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				72FFF58722F8691800DA0FE0 /* RootViewController.swift in Sources */,
-				72D5974522F88F7C0029CAD3 /* PlacesViewController.swift in Sources */,
 				72D5974122F88F560029CAD3 /* PayViewController.swift in Sources */,
 				7283A9F522F8A06D00B37047 /* Place.swift in Sources */,
 				7283A9F922F8AAF700B37047 /* PlacesClient.swift in Sources */,
@@ -324,6 +533,18 @@
 				72D5973F22F88F3D0029CAD3 /* HistoryViewController.swift in Sources */,
 				7283A9FB22F9A93400B37047 /* PlaceTableViewCell.swift in Sources */,
 				721CD7192306EE140052334C /* PlacesSearchBar.swift in Sources */,
+				2A239A53A7622239097F14D8 /* PlacesViewInput.swift in Sources */,
+				C6A124BE60DAAC00287EFF1F /* PlacesViewOutput.swift in Sources */,
+				55FAC80B16AE419C55DF1712 /* PlacesViewController.swift in Sources */,
+				40ABE81BC1472579DB2ECBFE /* PlacesModuleInput.swift in Sources */,
+				3F741AD63C08BB29278F0E2A /* PlacesPresenter.swift in Sources */,
+				18A680471B2D1B19BB046912 /* PlacesInteractorInput.swift in Sources */,
+				2B54A80679C1E4B956213FDA /* PlacesInteractorOutput.swift in Sources */,
+				8AF0ABE880F62C3822B4E6E2 /* PlacesInteractor.swift in Sources */,
+				6AE9998E25D17EEC2F871889 /* PlacesRouterInput.swift in Sources */,
+				82A0483BDD4CD965446C2A1F /* PlacesRouter.swift in Sources */,
+				5007D97C49272E0CD6E6DE0F /* PlacesConfigurator.swift in Sources */,
+				62297E20DF876D3A596AFE7D /* PlacesInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
