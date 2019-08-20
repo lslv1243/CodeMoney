@@ -7,14 +7,19 @@
 //
 
 import UIKit
+import MapKit
 
-class PlacesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, PlacesSearchBarDelegate {
+class PlacesViewController: UIViewController {
   private var places: [Place] = []
   private let placesClient = PlacesClient()
   private let tableView = UITableView()
+  private let mapView = MKMapView()
   private let refreshControl = UIRefreshControl()
   private let searchBar = PlacesSearchBar()
+  
   private var searching = ""
+  private var currentLatitude = -27.0912233
+  private var currentLongitude = -48.8892335
   
   init() {
     super.init(nibName: nil, bundle: nil)
@@ -23,8 +28,10 @@ class PlacesViewController: UIViewController, UITableViewDataSource, UITableView
     stackView.axis = .vertical
     view = stackView
     
+    mapView.isHidden = true
     stackView.addArrangedSubview(searchBar)
     stackView.addArrangedSubview(tableView)
+    stackView.addArrangedSubview(mapView)
     stackView.bringSubviewToFront(searchBar)
     
     tableView.dataSource = self
@@ -35,6 +42,13 @@ class PlacesViewController: UIViewController, UITableViewDataSource, UITableView
     tabBarItem.title = "Locais"
     view.backgroundColor = .white
     tableView.separatorColor = .clear
+    
+    let location = CLLocationCoordinate2D(latitude: currentLatitude, longitude: currentLongitude)
+    let userLocation = FakeUserLocation()
+    userLocation.fakeCoordinate = location
+    mapView.setCenter(location, animated: false)
+    mapView.addAnnotation(userLocation)
+    mapView.delegate = self
     
     tableView.refreshControl = refreshControl
     refreshControl.addTarget(self, action: #selector(refreshControlTarget), for: .valueChanged)
@@ -60,7 +74,7 @@ class PlacesViewController: UIViewController, UITableViewDataSource, UITableView
   
   func reloadPlaces() {
     refreshControl.beginRefreshing()
-    placesClient.listDistance(latitude: -27.0912233, longitude: -48.8892335, search: searching)
+    placesClient.listDistance(latitude: currentLatitude, longitude: currentLongitude, search: searching)
       .done { places in
         self.places = places
         self.tableView.reloadData()
@@ -70,7 +84,21 @@ class PlacesViewController: UIViewController, UITableViewDataSource, UITableView
         self.refreshControl.endRefreshing()
       }
   }
+}
+
+extension PlacesViewController: PlacesSearchBarDelegate {
+  func placesSearchBar(_ searchBar: PlacesSearchBar, didUpdateDisplayingMode toMode: PlacesSearchBar.DisplayingMode) {
+    mapView.isHidden = toMode != .map
+    tableView.isHidden = toMode != .list
+  }
   
+  func placesSearchBar(_ searchBar: PlacesSearchBar, didChangeText newText: String) {
+    searching = newText
+    reloadPlaces()
+  }
+}
+
+extension PlacesViewController: UITableViewDataSource {
   func numberOfSections(in tableView: UITableView) -> Int {
     return 1
   }
@@ -87,17 +115,23 @@ class PlacesViewController: UIViewController, UITableViewDataSource, UITableView
     cell.showPlace(place: place)
     return cell
   }
-  
+}
+
+extension PlacesViewController: UITableViewDelegate {
   func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
     searchBar.resignFirstResponder()
   }
-  
-  func placesSearchBar(_ searchBar: PlacesSearchBar, didUpdateDisplayingMode toMode: PlacesSearchBar.DisplayingMode) {
-    // TODO: change center view from list to map and vice versa
+}
+
+extension PlacesViewController: MKMapViewDelegate {
+  func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {
+    searchBar.resignFirstResponder()
   }
-  
-  func placesSearchBar(_ searchBar: PlacesSearchBar, didChangeText newText: String) {
-    searching = newText
-    reloadPlaces()
+}
+
+fileprivate class FakeUserLocation: MKUserLocation {
+  var fakeCoordinate = CLLocationCoordinate2D()
+  override var coordinate: CLLocationCoordinate2D {
+    return fakeCoordinate
   }
 }

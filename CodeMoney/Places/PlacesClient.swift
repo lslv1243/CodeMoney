@@ -13,7 +13,7 @@ import PMKAlamofire
 class PlacesClient {
   private let decoder = JSONDecoder()
   
-  func listDistance(latitude: Float, longitude: Float, search: String = "", page: Int = 0) -> Promise<[Place]> {
+  func listDistance(latitude: Double, longitude: Double, search: String = "", page: Int = 0) -> Promise<[Place]> {
     let url = "https://rest.codemoney.com.br/v2/sale/list-distance?page=\(page)&lat=\(latitude)&lng=\(longitude)&searchString=\(search)"
     return Alamofire.request(url)
       .responseData()
