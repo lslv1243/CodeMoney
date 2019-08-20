@@ -56,6 +56,7 @@ class PlacesViewController: UIViewController {
     let resignSearchBarFirstResponderTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(resignSearchBarFirstResponder))
     resignSearchBarFirstResponderTapGestureRecognizer.cancelsTouchesInView = false
     tableView.addGestureRecognizer(resignSearchBarFirstResponderTapGestureRecognizer)
+    mapView.addGestureRecognizer(resignSearchBarFirstResponderTapGestureRecognizer)
 
     reloadPlaces()
   }
