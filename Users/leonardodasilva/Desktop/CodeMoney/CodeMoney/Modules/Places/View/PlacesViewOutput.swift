@@ -15,5 +15,6 @@ protocol PlacesViewOutput {
   
   func viewIsReady()
   func searchBarDidChangeText(_ text: String)
-  func didPullToRefreshPlaces()
+  func didPullToRefresh()
+  func didReachEndOfList()
 }

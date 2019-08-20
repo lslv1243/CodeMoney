@@ -9,6 +9,6 @@
 import Foundation
 
 protocol PlacesInteractorOutput: class {
-  func didLoadPlaces(places: [Place])
-  func didFailLoadingPlaces(error: Error)
+  func didLoadPlaces(places: [Place], forPage page: Int)
+  func didFailLoadingPlaces(error: Error, forPage page: Int)
 }

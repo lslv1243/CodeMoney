@@ -8,18 +8,29 @@
 
 class PlacesInteractor {
   private let placesClient = PlacesClient()
+  private var currentPage = 0
   
   weak var output: PlacesInteractorOutput!
 }
 
 extension PlacesInteractor: PlacesInteractorInput {
   func reloadPlaces(forLatitude latitude: Double, longitude: Double, search: String) {
-    placesClient.listDistance(latitude: latitude, longitude: longitude, search: search)
+    currentPage = 0
+    loadPlaces(forLatitude: latitude, longitude: longitude, search: search)
+  }
+  
+  func loadMorePlaces(forLatitude latitude: Double, longitude: Double, search: String) {
+    currentPage += 1
+    loadPlaces(forLatitude: latitude, longitude: longitude, search: search)
+  }
+  
+  private func loadPlaces(forLatitude latitude: Double, longitude: Double, search: String) {
+    placesClient.listDistance(latitude: latitude, longitude: longitude, search: search, page: self.currentPage)
       .done { places in
-        self.output.didLoadPlaces(places: places)
+        self.output.didLoadPlaces(places: places, forPage: self.currentPage)
       }
       .catch { error in
-        self.output.didFailLoadingPlaces(error: error)
-      }
+        self.output.didFailLoadingPlaces(error: error, forPage: self.currentPage)
+    }
   }
 }

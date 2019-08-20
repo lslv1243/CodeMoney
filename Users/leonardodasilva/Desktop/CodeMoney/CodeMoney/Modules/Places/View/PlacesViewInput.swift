@@ -15,8 +15,11 @@ protocol PlacesViewInput: class {
   
   func positionMap(atLatitude latitude: Double, longitude: Double)
   
-  func showLoadingPlacesIndicator()
-  func hideLoadingPlacesIndicator()
-  func showPlaces(_ places: [Place])
-  func showErrorWhileLoadingPlaces()
+  func showReloadingListIndicator()
+  func hideReloadingListIndicator()
+  func showLoadingMoreForListIndicator()
+  func hideLoadingMoreForListIndicator()
+  func showInList(places: [Place])
+  func showMoreInList(places: [Place])
+  func showErrorWhileLoadingList()
 }

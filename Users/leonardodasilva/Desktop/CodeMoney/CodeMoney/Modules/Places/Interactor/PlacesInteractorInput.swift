@@ -10,4 +10,5 @@ import Foundation
 
 protocol PlacesInteractorInput {
   func reloadPlaces(forLatitude latitude: Double, longitude: Double, search: String)
+  func loadMorePlaces(forLatitude latitude: Double, longitude: Double, search: String)
 }
