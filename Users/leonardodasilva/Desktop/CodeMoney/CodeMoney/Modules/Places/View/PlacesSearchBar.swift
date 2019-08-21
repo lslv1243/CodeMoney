@@ -30,7 +30,7 @@ class PlacesSearchBar: UIView, UITextFieldDelegate {
   }
   
   init() {
-    super.init(frame: CGRect(x: 0, y: 0, width: 0, height: 55))
+    super.init(frame: .zero)
   
     toggleModeButton.addTarget(self, action: #selector(toggleDisplayingMode), for: .touchUpInside)
     textField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
